@@ -265,7 +265,6 @@ def add(bot, update):
                     moderated[chat_idstr] = chat_id
                     bot.sendMessage(chat_id=update.message.chat_id,
                                     text=update.message.chat.title + " added to my records!")
-                    return
                 else:
                     bot.sendMessage(chat_id=update.message.chat_id,
                                     text=update.message.chat.title + " is already in my records")
